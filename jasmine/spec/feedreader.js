@@ -62,9 +62,8 @@ $(function() {
          * the CSS to determine how we're performing the
          * hiding/showing of the menu element.
          */
-        it('the menu element is hidden by default', function(){
-            
-            expect ($(body).hasClass('menu-hidden')).toBe(true);
+        it('is hidden by default', function(){
+            expect($(body).hasClass('menu-hidden')).toBe(true);
         });
 
          /* TODO: Write a test that ensures the menu changes
@@ -72,7 +71,12 @@ $(function() {
           * should have two expectations: does the menu display when
           * clicked and does it hide when clicked again.
           */
-        
+        it('displays the menu when click on the menu icon and hide the menu when click on the menu icon again', function() {
+            $('.icon-list').click();
+            expect($(body).hasClass('menu-hidden')).toBe(false);            // $('.icon-list').click();
+            $('.icon-list').click();
+            expect($(body).hasClass('menu-hidden')).toBe(true);
+        }) ;       
         
     });
     /* TODO: Write a new test suite named "Initial Entries" */
