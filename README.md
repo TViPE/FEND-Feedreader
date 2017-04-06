@@ -46,3 +46,11 @@ Review the Feed Reader Testing [Project Rubric](https://review.udacity.com/#!/pr
 19. Implement error handling for undefined variables and out-of-bound array access.
 20. When complete - all of your tests should pass. 
 21. Write a README file detailing all steps required to successfully run the application. If you have added additional tests (for Udacious Test Coverage),  provide documentation for what these future features are and what the tests are checking for.
+
+# How to run the application
+1. Clone or download the responsitory
+2. Extract the zip file after downloading.
+3. Click on index.html to run the application and the test results will be displayed at the bottom of the page.
+4. If you want to write more test suites:
+- Please review the **index.html**, **app.js** (in js/app.js), **jasmine.js** (in jasmine/lib/jasmine-2.1.2/jasmine.js), and **style.css** in(css/style.css) to gain better understanding before writing any test suites.
+- When you are ready, you can write test suites/specs in **feedreader.js** (in jasmine/spec/feedreader.js)
